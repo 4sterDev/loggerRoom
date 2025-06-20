@@ -6,6 +6,7 @@ const (
 	RED Color = iota
 	GREEN
 	YELLOW
+	MAGENTA
 	RESET
 )
 
@@ -17,6 +18,8 @@ func (c Color) String() string {
 		return "\033[32m"
 	case YELLOW:
 		return "\033[33m"
+	case MAGENTA:
+		return "\033[35m"
 	case RESET:
 		return "\033[0m"
 	}
